@@ -177,28 +177,32 @@ const LandingPage = () => {
       </main>
       
       {/* Section with large image and overlay text */}
-      <div className="mt-12 px-4 sm:px-6 lg:px-8">
-        <div className="relative max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
-          <img 
-            src="/assets/M2.jpg" 
-            alt="Large banner" 
-            className="w-full h-auto object-cover rounded-lg"
-            style={{ maxHeight: '400px' }}
-          />
-          <div className="absolute inset-0 flex flex-col items-center justify-start text-center p-8 pt-16">
-            <span className="bg-green-300 text-green-800 px-4 py-2 rounded-full text-sm font-semibold mb-4">
-              Join the movement!
-            </span>
-            <h2 className="text-4xl font-bold text-white mb-8 max-w-lg">
-              Discover a smarter way to learn
-            </h2>
-            <button onClick={handleButtonClick} className="bg-white text-black px-6 py-3 rounded-full font-semibold flex items-center">
-              Take the first step
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </button>
-          </div>
-        </div>
-      </div>
+<div className="mt-12 px-4 sm:px-6 lg:px-8">
+  <div className="relative max-w-4xl lg:max-w-5xl xl:max-w-6xl mx-auto">
+    <img 
+      src="/assets/M2.jpg" 
+      alt="Large banner" 
+      className="w-full h-auto object-cover rounded-lg"
+      style={{ maxHeight: '400px' }}
+    />
+    <div className="absolute inset-0 flex flex-col items-center justify-start text-center p-4 sm:p-8 sm:pt-12">
+      <span className="bg-green-300 text-green-800 px-4 py-2 rounded-full text-xs sm:text-sm font-semibold mb-2 sm:mb-4">
+        Join the movement!
+      </span>
+      <h2 className="text-xl sm:text-2xl md:text-4xl font-bold text-white mb-4 sm:mb-8 max-w-lg">
+        Discover a smarter way to learn
+      </h2>
+      <button 
+        onClick={handleButtonClick} 
+        className="bg-white text-black px-3 py-2 sm:px-6 sm:py-3 rounded-full font-semibold flex items-center text-sm sm:text-base"
+      >
+        Take the first step
+        <ArrowRight className="ml-2 h-4 w-4 sm:h-5 sm:w-5" />
+      </button>
+    </div>
+  </div>
+</div>
+
 
       {/* Updated Section with Columns */}
       <div className="py-12 bg-gray-100 mt-12">
