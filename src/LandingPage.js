@@ -369,23 +369,23 @@ const LandingPage = () => {
     
     {/* New FAQ Section */}
     <div className="py-12 bg-gray-100">
-        <div className="max-w-7xl mt-6 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mt-6 sm:mt-12 mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
          
           <div className="space-y-4">
             <details className="bg-white p-4 rounded-lg shadow">
               <summary className="font-semibold cursor-pointer">What is IlmQuest?</summary>
-              <p className="mt-2">IlmQuest is a platform dedicated to fostering a love for Islamic knowledge, combining innovative learning techniques with a wealth of resources to make education engaging and accessible.</p>
+              <p className="mt-2"> Ilmquest is an online gaming platform that offers a variety of knowledge-based games, quizzes, and puzzles to help users learn, grow, and have fun.</p>
             </details>
             
             <details className="bg-white p-4 rounded-lg shadow">
-              <summary className="font-semibold cursor-pointer">What topics can I explore?</summary>
-              <p className="mt-2">IlmQuest offers a wide range of topics including Quranic studies, Islamic history, Arabic language, Islamic ethics, and contemporary issues from an Islamic perspective.</p>
+              <summary className="font-semibold cursor-pointer">How do I play games on Ilmquest?</summary>
+              <p className="mt-2">Simply create an account, browse our game library, and start playing. You can choose from various categories, difficulty levels, and game formats.</p>
             </details>
             
             <details className="bg-white p-4 rounded-lg shadow">
-              <summary className="font-semibold cursor-pointer">Is it suitable for all ages and skill levels?</summary>
-              <p className="mt-2">Yes, IlmQuest caters to learners of all ages and skill levels. We offer tailored content for children, beginners, intermediate learners, and advanced scholars.</p>
+              <summary className="font-semibold cursor-pointer">What types of games will be or are available on Ilmquest?</summary>
+              <p className="mt-2"> Ilmquest offers a range of games, including quizzes, trivia, word games, puzzles, and strategy games, covering various subjects like history, science, literature, and more.</p>
             </details>
             
             <details className="bg-white p-4 rounded-lg shadow">
