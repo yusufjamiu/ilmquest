@@ -346,8 +346,7 @@ const LandingPage = () => {
                 <div className="md:w-1/2 text-center md:text-left md:pr-8">
                   <h2 className="text-3xl font-bold mb-4">Kids' Zone: Learn & Play</h2>
                   <p className="mb-6">
-                    Our kids' zone is designed to make learning fun and interactive. Join us for exciting
-                    adventures in knowledge, where curiosity leads to discovery!
+                    Our kids' zone is a safe and engaging section designed specially for children aged 6-12. Our goal here is to make learning fun, fostering a love for knowledge and exploration.
                   </p>
                   <button className="bg-green-500 text-white px-6 py-2 rounded-full hover:bg-green-600 transition duration-300">
                     Explore Kids' Zone
@@ -369,7 +368,7 @@ const LandingPage = () => {
     
     {/* New FAQ Section */}
     <div className="py-12 bg-gray-100">
-        <div className="max-w-7xl mt-6 sm:mt-12 mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mt-6 sm:mt-8 mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-8">Frequently Asked Questions</h2>
          
           <div className="space-y-4">
@@ -385,12 +384,17 @@ const LandingPage = () => {
             
             <details className="bg-white p-4 rounded-lg shadow">
               <summary className="font-semibold cursor-pointer">What types of games will be or are available on Ilmquest?</summary>
-              <p className="mt-2"> Ilmquest offers a range of games, including quizzes, trivia, word games, puzzles, and strategy games, covering various subjects like history, science, literature, and more.</p>
+              <p className="mt-2">Ilmquest offers a range of games, including quizzes, trivia, word games, puzzles, and strategy games, covering various subjects like history, science, literature, and more.</p>
             </details>
             
             <details className="bg-white p-4 rounded-lg shadow">
-              <summary className="font-semibold cursor-pointer">What sets it apart from other platforms?</summary>
-              <p className="mt-2">IlmQuest stands out with its interactive learning approach, peer group collaborations, vast library of resources, and unique gamification elements that make the learning journey enjoyable and rewarding.</p>
+              <summary className="font-semibold cursor-pointer">Can I compete with other players?</summary>
+              <p className="mt-2">Yes! Ilmquest allows you to compete with other players in real-time, track your rankings, and earn rewards.</p>
+            </details>
+
+            <details className="bg-white p-4 rounded-lg shadow">
+              <summary className="font-semibold cursor-pointer">Is Ilmquest free to play?</summary>
+              <p className="mt-2">Yes, Ilmquest offers free and paid membership options. Free members can access a limited selection of games, while premium members enjoy full access, exclusive content, and special perks.</p>
             </details>
           </div>
         </div>
