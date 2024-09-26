@@ -365,6 +365,7 @@ const LandingPage = () => {
         </div>
       </div>
     </div>
+    <div className="mt-16 md:mt-0"></div>
     
     {/* New FAQ Section */}
     <div className="py-12 bg-gray-100">
