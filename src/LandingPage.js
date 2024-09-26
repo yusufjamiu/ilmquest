@@ -435,6 +435,44 @@ const LandingPage = () => {
   </div>
 </div>
 
+<footer className="bg-teal-600 text-white py-8">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row md:justify-between">
+            <div className="w-full md:w-auto mb-6 md:mb-0">
+              <h2 className="text-xl font-bold mb-4">IlmQuest</h2>
+            </div>
+            <div className="grid grid-cols-3 gap-4 w-full md:w-auto">
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-orange-500">COMPANY</h3>
+                <ul className="space-y-2">
+                  <li><a href="#" className="hover:underline">Main Features</a></li>
+                  <li><a href="#" className="hover:underline">Pricing</a></li>
+                  <li><a href="#" className="hover:underline">Demo</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-orange-500">SOCIAL</h3>
+                <ul className="space-y-2">
+                  <li><a href="#" className="hover:underline">Instagram</a></li>
+                  <li><a href="#" className="hover:underline">Twitter</a></li>
+                  <li><a href="#" className="hover:underline">LinkedIn</a></li>
+                </ul>
+              </div>
+              <div>
+                <h3 className="text-lg font-semibold mb-2 text-orange-500">ABOUT</h3>
+                <ul className="space-y-2">
+                  <li><a href="#" className="hover:underline">Terms & Conditions</a></li>
+                  <li><a href="#" className="hover:underline">Privacy Policy</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div className="mt-8 text-center">
+            <p>&copy; Copyright 2024 IlmQuest</p>
+          </div>
+        </div>
+      </footer>
+
       {showPopup && <PopupForm onClose={() => setShowPopup(false)} onSubmit={handleFormSubmit} />}
       {showOnboarding && <OnboardingPopup onClose={() => setShowOnboarding(false)} />}
     </div>
