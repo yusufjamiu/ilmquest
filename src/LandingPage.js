@@ -63,7 +63,7 @@ const OnboardingPopup = ({ onClose }) => {
         <p className="mb-4">Connect with us on social media:</p>
         <div className="flex flex-col space-y-4">
           <a
-            href="https://instagram.com/ilmquest"
+            href="https://instagram.com/_ilmquest"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700"
@@ -71,7 +71,7 @@ const OnboardingPopup = ({ onClose }) => {
             <Instagram className="mr-2" /> Follow us on Instagram
           </a>
           <a
-            href="https://twitter.com/ilmquest"
+            href="https://twitter.com/_ilmquest"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center px-4 py-2 bg-blue-400 text-white rounded hover:bg-blue-500"
@@ -454,7 +454,7 @@ const LandingPage = () => {
                 <h3 className="text-lg font-semibold mb-2 text-orange-500">SOCIAL</h3>
                 <ul className="space-y-2">
                   <li><a href="#" className="hover:underline">Instagram</a></li>
-                  <li><a href="#" className="hover:underline">Twitter</a></li>
+                  <li><a href="https://x.com/_ilmquest" className="hover:underline">Twitter</a></li>
                   <li><a href="#" className="hover:underline">LinkedIn</a></li>
                 </ul>
               </div>
