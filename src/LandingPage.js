@@ -5,7 +5,7 @@ import { supabase } from "./utils/supabase";
 
 const LoadingSpinner = () => (
   <svg
-    class="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
+    className="animate-spin -ml-1 mr-3 h-5 w-5 text-white"
     xmlns="http://www.w3.org/2000/svg"
     fill="none"
     viewBox="0 0 24 24"
@@ -33,6 +33,7 @@ const PopupForm = ({ onClose, onSubmit }) => {
   const [name, setName] = useState("");
   const [whatsapp, setWhatsapp] = useState("");
   const [email, setEmail] = useState("");
+  const [country, setCountry] = useState("");
 
   const handleSubmit = async (e) => {
     try {
@@ -43,12 +44,12 @@ const PopupForm = ({ onClose, onSubmit }) => {
 
       const { data, error } = await supabase
         .from("Responses")
-        .insert([{ name, email, phone: whatsapp }])
+        .insert([{ name, email, phone: whatsapp, country }])
         .select();
 
       if (error) throw new Error("Sorry, an error occurred.");
 
-      onSubmit({ name, phone: whatsapp, email });
+      onSubmit({ name, phone: whatsapp, email, country });
       setIsLoading(true);
     } catch (error) {
       console.log("Error ", error);
@@ -83,6 +84,14 @@ const PopupForm = ({ onClose, onSubmit }) => {
             placeholder="Email Address"
             value={email}
             onChange={(e) => setEmail(e.target.value)}
+            className="w-full p-2 mb-4 border rounded"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Country"
+            value={country}
+            onChange={(e) => setCountry(e.target.value)}
             className="w-full p-2 mb-4 border rounded"
             required
           />
