@@ -31,7 +31,6 @@ const PopupForm = ({ onClose, onSubmit }) => {
   const [error, setError] = useState("");
 
   const [name, setName] = useState("");
-  const [whatsapp, setWhatsapp] = useState("");
   const [email, setEmail] = useState("");
   const [country, setCountry] = useState("");
 
@@ -44,12 +43,12 @@ const PopupForm = ({ onClose, onSubmit }) => {
 
       const { data, error } = await supabase
         .from("Responses")
-        .insert([{ name, email, phone: whatsapp, country }])
+        .insert([{ name, email, country }])
         .select();
 
       if (error) throw new Error("Sorry, an error occurred.");
 
-      onSubmit({ name, phone: whatsapp, email, country });
+      onSubmit({ name, email, country });
       setIsLoading(true);
     } catch (error) {
       console.log("Error ", error);
@@ -68,14 +67,6 @@ const PopupForm = ({ onClose, onSubmit }) => {
             placeholder="Name"
             value={name}
             onChange={(e) => setName(e.target.value)}
-            className="w-full p-2 mb-4 border rounded"
-            required
-          />
-          <input
-            type="tel"
-            placeholder="WhatsApp Number"
-            value={whatsapp}
-            onChange={(e) => setWhatsapp(e.target.value)}
             className="w-full p-2 mb-4 border rounded"
             required
           />
@@ -127,7 +118,7 @@ const OnboardingPopup = ({ onClose }) => {
         <p className="mb-4">Connect with us on social media:</p>
         <div className="flex flex-col space-y-4">
           <a
-            href="https://instagram.com/_ilmquest"
+            href="https://instagram.com/ilmquest_"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center px-4 py-2 bg-pink-600 text-white rounded hover:bg-pink-700"
@@ -135,7 +126,7 @@ const OnboardingPopup = ({ onClose }) => {
             <Instagram className="mr-2" /> Follow us on Instagram
           </a>
           <a
-            href="https://twitter.com/_ilmquest"
+            href="https://twitter.com/ilmquest_"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center justify-center px-4 py-2 bg-blue-400 text-white rounded hover:bg-blue-500"
@@ -232,7 +223,7 @@ const LandingPage = () => {
             onClick={handleButtonClick}
             className="px-5 py-2 text-white text-sm font-semibold rounded-full bg-gradient-to-r from-green-700 to-green-900 hover:from-green-500 hover:to-green-700 transition duration-300 shadow-md flex items-center"
           >
-            Take the First Step
+            Join the Waitlist
             <ArrowRight className="ml-2 h-4 w-4" />
           </button>
         </div>
@@ -697,7 +688,7 @@ const LandingPage = () => {
                 <ul className="space-y-2">
                   <li>
                     <a
-                      href="https://instagram.com/_ilmquest"
+                      href="https://instagram.com/ilmquest_"
                       className="hover:underline"
                     >
                       Instagram
@@ -705,7 +696,7 @@ const LandingPage = () => {
                   </li>
                   <li>
                     <a
-                      href="https://x.com/_ilmquest"
+                      href="https://x.com/ilmquest_"
                       className="hover:underline"
                     >
                       Twitter
